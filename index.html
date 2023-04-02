@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matrice d'Eisenhower</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .urgent-important {
+      background-color: #FF4136;
+      color: white;
+    }
+    .important-nonurgent {
+      background-color: #FF851B;
+      color: white;
+    }
+    .urgent-nonimportant {
+      background-color: #2ECC40;
+      color: white;
+    }
+    .nonurgent-nonimportant {
+      background-color: #0074D9;
+      color: white;
+    }
+    
+    .column-divider {
+      border-right: 1px solid #dee2e6;
+    }
+    .last-column {
+      border-right: none;
+    }
+    
+    /* Ajout de styles pour améliorer la lisibilité */
+    .matrix li {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+    .matrix input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .matrix label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center my-5">Matrice d'Eisenhower</h1>
+  <div class="row">
+    <div class="col-md-6 column-divider urgent-important">
+      <h2>Urgent et important</h2>
+      <ul class="matrix">
+        <li>
+          <input type="checkbox" id="urgent-important-task-1" aria-describedby="urgent-important-task-1-desc">
+          <label for="urgent-important-task-1">Faire mes devoirs avant la date limite</label>
+          <div id="urgent-important-task-1-desc">Cette tâche est urgente et importante car elle a une échéance imminente et son accomplissement est nécessaire pour maintenir de bonnes notes.</div>
+        </li>
+        <li>
+          <input type="checkbox" id="urgent-important-task-2" aria-describedby="urgent-important-task-2-desc">
+          <label for="urgent-important-task-2">Répondre à un email important</label>
+          <div id="urgent-important-task-2-desc">Cette tâche est urgente et importante car elle nécessite une réponse immédiate et peut avoir un impact sur des projets en cours.</div>
+        </li>
+      </ul>
+    </div>
+   
+
+   <div class="col-md-6 column-divider important-nonurgent">
+      <h2>Important mais non urgent</h2>
+      <ul class="matrix">
+        <li>
+          <input type="checkbox" id="important-nonurgent-task-1" aria-describedby="important-nonurgent-task-1-desc">
+          <label for="important-nonurgent-task-1">Planifier mes vacances d'été</label>
+          <div id="important-nonurgent-task-1-desc">Cette tâche est importante mais non urgente car elle n'a pas d'échéance imminente, mais elle est importante pour ma qualité de vie et ma santé mentale.</div>
+        </li>
+        <li>
+          <input type="checkbox" id="important-nonurgent-task-2" aria-describedby="important-nonurgent-task-2-desc">
+          <label for="important-nonurgent-task-2">Lire un livre sur le développement personnel</label>
+          <div id="important-nonurgent-task-2-desc">Cette tâche est importante mais non urgente car elle n'a pas d'échéance imminente, mais elle peut m'aider à développer mes compétences et à améliorer ma vie.</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6 column-divider urgent-nonimportant">
+      <h2>Urgent mais non important</h2>
+      <ul class="matrix">
+        <li>
+          <input type="checkbox" id="urgent-nonimportant-task-1" aria-describedby="urgent-nonimportant-task-1-desc">
+          <label for="urgent-nonimportant-task-1">Répondre à un email de spam</label>
+          <div id="urgent-nonimportant-task-1-desc">Cette tâche est urgente mais non importante car elle nécessite une réponse immédiate, mais elle n'a pas d'impact significatif sur mes projets ou mes objectifs.</div>
+        </li>
+        <li>
+          <input type="checkbox" id="urgent-nonimportant-task-2" aria-describedby="urgent-nonimportant-task-2-desc">
+          <label for="urgent-nonimportant-task-2">Assister à une réunion de travail</label>
+          <div id="urgent-nonimportant-task-2-desc">Cette tâche est urgente mais non importante car elle a une échéance imminente, mais elle n'a pas un impact significatif sur mes objectifs personnels ou professionnels.</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6 last-column nonurgent-nonimportant">
+      <h2>Non urgent et non important</h2>
+      <ul class="matrix">
+        <li>
+          <input type="checkbox" id="nonurgent-nonimportant-task-1" aria-describedby="nonurgent-nonimportant-task-1-desc">
+          <label for="nonurgent-nonimportant-task-1">Regarder une série sur Netflix</label>
+          <div id="nonurgent-nonimportant-task-1-desc">Cette tâche est non urgente et non importante car elle n'a pas d'échéance imminente et elle n'a pas un impact significatif sur mes objectifs personnels ou professionnels.</div>
+        </li>
+        <li>
+         <input type="checkbox" id="nonurgent-nonimportant-task-2" aria-describedby="nonurgent-nonimportant-task-2-desc">
+          <label for="nonurgent-nonimportant-task-2">Jouer à un jeu vidéo</label>
+          <div id="nonurgent-nonimportant-task-2-desc">Cette tâche est non urgente et non importante car elle n'a pas d'échéance imminente et elle n'a pas un impact significatif sur mes objectifs personnels ou professionnels.</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
