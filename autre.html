@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Matrice d'Eisenhower</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 column-divider important-urgent">
+        <h2>Important et urgent</h2>
+        <ul class="matrix" id="important-urgent-list">
+          <li>
+            <input type="checkbox" id="important-urgent-task-1" aria-describedby="important-urgent-task-1-desc">
+            <label for="important-urgent-task-1">Terminer le rapport pour la réunion de demain</label>
+            <div id="important-urgent-task-1-desc" class="task-description">Cette tâche est très importante et doit être terminée aujourd'hui avant la réunion.</div>
+          </li>
+        </ul>
+        <div class="add-task">
+          <input type="text" id="important-urgent-new-task" placeholder="Ajouter une nouvelle tâche">
+          <button type="button" class="btn btn-primary" id="important-urgent-add-task-btn">Ajouter</button>
+        </div>
+      </div>
+      <div class="col-md-6 column-divider important-not-urgent">
+        <h2>Important mais non urgent</h2>
+        <ul class="matrix" id="important-not-urgent-list">
+          <li>
+            <input type="checkbox" id="important-not-urgent-task-1" aria-describedby="important-not-urgent-task-1-desc">
+            <label for="important-not-urgent-task-1">Mettre à jour la documentation de l'application</label>
+            <div id="important-not-urgent-task-1-desc" class="task-description">Cette tâche est importante pour maintenir la qualité de l'application, mais elle n'est pas urgente.</div>
+          </li>
+        </ul>
+        <div class="add-task">
+          <input type="text" id="important-not-urgent-new-task" placeholder="Ajouter une nouvelle tâche">
+          <button type="button" class="btn btn-primary" id="important-not-urgent-add-task-btn">Ajouter</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 column-divider not-important-urgent">
+        <h2>Pas important mais urgent</h2>
+        <ul class="matrix" id="not-important-urgent-list">
+          <li>
+            <input type="checkbox" id="not-important-urgent-task-1" aria-describedby="not-important-urgent-task-1-desc">
+            <label for="not-important-urgent-task-1">Répondre à l'e-mail de M. Dupont</label>
+            <div id="not-important-urgent-task-1-desc" class="task-description">Cette tâche est urgente, mais elle n'a pas beaucoup d'importance.</div>
+          </li>
+        </ul>
+        <div class="add-task">
+          <input type="text" id="not-important-urgent
+
+                                 
+                                 -new-task" placeholder="Ajouter une nouvelle tâche">
+<button type="button" class="btn btn-primary" id="not-important-urgent-add-task-btn">Ajouter</button>
+</div>
+</div>
+<div class="col-md-6 column-divider not-important-not-urgent">
+<h2>Pas important et non urgent</h2>
+<ul class="matrix" id="not-important-not-urgent-list">
+<li>
+<input type="checkbox" id="not-important-not-urgent-task-1" aria-describedby="not-important-not-urgent-task-1-desc">
+<label for="not-important-not-urgent-task-1">Faire du shopping pour le déjeuner de demain</label>
+<div id="not-important-not-urgent-task-1-desc" class="task-description">Cette tâche n'est ni importante ni urgente, mais elle doit être faite à un moment donné.</div>
+</li>
+</ul>
+<div class="add-task">
+<input type="text" id="not-important-not-urgent-new-task" placeholder="Ajouter une nouvelle tâche">
+<button type="button" class="btn btn-primary" id="not-important-not-urgent-add-task-btn">Ajouter</button>
+</div>
+</div>
+</div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
